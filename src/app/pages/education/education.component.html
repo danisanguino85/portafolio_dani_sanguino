@@ -1,0 +1,13 @@
+<div class="general">
+    @for(item of education;track $index){
+    <div class="formaciones">
+        <h3>{{item.estudios }}</h3>
+        <h4 class="tertiary">{{item.entidad}}</h4>
+        <!-- <p>{{item.descripcion}}</p> -->
+        <h5>{{item.fecha}}</h5>
+        @if(item.entidad==='ID BOOT CAMPS'){
+        <button class="btn btn-dark" (click)="onClick()"> Ver más</button>
+        }
+    </div>
+    }
+</div>

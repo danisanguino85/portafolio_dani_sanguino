@@ -1,0 +1,43 @@
+ul.wrapper {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: fit-content;
+  gap: 1rem;
+  font-size: 90%;
+  div.iconos {
+    display: flex;
+    gap: 30px;
+  }
+}
+p {
+  margin: 0.5rem;
+}
+i {
+  font-size: 150%;
+  cursor: pointer;
+  transition: 0.3s;
+  animation-duration: 1s;
+  color: var(--text-color);
+}
+ul {
+  padding-left: 0;
+}
+i:hover {
+  transform: scale(1.3);
+  /* Cambiado a transform para hover */
+}
+.nombre {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .wrapper {
+    display: none;
+  }
+  .nombre {
+    flex-direction: column;
+    align-items: center;
+  }
+}

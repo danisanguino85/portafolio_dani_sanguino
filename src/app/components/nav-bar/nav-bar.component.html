@@ -1,0 +1,42 @@
+<div class="general">
+    <nav>
+        <ul [class]="estado">
+            <li class="nombre">DANI SANGUINO</li>
+
+            <li (click)="cerrarMenu()" [style]="router.url === '/inicio' ? {'font-weight':'bolder'}:{}"
+                [routerLink]="['/inicio']"><i class="fa-solid fa-house li"></i> Inicio</li>
+            <hr>
+            <li (click)="cerrarMenu()" [style]="router.url === '/proyectos' ? {'font-weight':'bolder'}:{}"
+                [routerLink]="['/proyectos']"><i class="fa-solid fa-rocket li"></i> Proyectos</li>
+            <hr>
+            <li (click)="cerrarMenu()" [style]="router.url === '/sobreMi' ? {'font-weight':'bolder'}:{}"
+                [routerLink]="['/sobreMi']"><i class="fa-solid fa-face-smile li"></i>Sobre mí
+            </li>
+            <hr>
+            <li (click)="cerrarMenu()" [style]="router.url === '/contacto' ? {'font-weight':'bolder'}:{}"
+                [routerLink]="['/contacto']"><i class="fa-solid fa-envelope li"></i>Contacto</li>
+            <hr>
+            <li>
+                <div class="switch" (click)="cambiarTema() ">
+                    @if(temaActual==='cool'){
+                    <i class="fa-solid fa-toggle-off"></i>
+                    }
+                    @if(temaActual==='dark'){
+                    <i class="fa-solid fa-toggle-on"></i>
+                    }
+                </div>
+            </li>
+        </ul>
+        <div (click)="cerrarMenu()" class="menu">
+            <p class="li">DANI SANGUINO</p>
+            @if(estado==='cerrado'){
+            <i class="fa-solid fa-bars li"></i>
+            }
+            @if(estado==='abierto'){
+            <i class="fa-solid fa-xmark li"></i>
+            }
+
+        </div>
+
+    </nav>
+</div>

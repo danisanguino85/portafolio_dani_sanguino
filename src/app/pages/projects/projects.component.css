@@ -1,0 +1,68 @@
+h1 {
+  font-size: 350%;
+  text-shadow: 1px 1px 1px black;
+}
+h2 {
+  font-size: 200%;
+  cursor: pointer;
+}
+figure.expo {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 490px;
+}
+
+figure.expo img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  max-height: 100%;
+}
+.blog {
+  transform: translateX(-3rem);
+}
+
+#crm:first-child {
+  width: 50%;
+}
+#crm:last-child {
+  width: 40%;
+}
+h4 {
+  font-weight: lighter;
+}
+.proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 50px;
+  padding: 30px 0 50px 0;
+}
+
+.proyecto {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.3s;
+
+  img {
+    border-radius: 10px;
+  }
+  h3 {
+    cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 300%;
+  }
+  .blog {
+    transform: translateX(-0.7rem);
+  }
+}

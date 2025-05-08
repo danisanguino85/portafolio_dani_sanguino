@@ -1,0 +1,11 @@
+<div class="general">
+    <h2>He trabajado en distintos ámbitos, pero aquí presento lo más destacado de mi recorrido laboral los últimos 10
+        años.</h2>
+    @for(experience of workExperience; track $index){
+    <div class="experiencia">
+        <h3>{{experience.puesto}}</h3>
+        <h4 class="tertiary">{{experience.empresa}}</h4>
+        <h5>{{experience.fecha}}</h5>
+        <p>{{experience.descripcion}}</p>
+    </div>
+    }

@@ -1,0 +1,36 @@
+.container {
+  min-height: calc(100vh - 250px);
+  text-align: center;
+  font-size: 150%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+form {
+  margin: 0 auto;
+  width: 90%;
+  textarea {
+    height: 200px;
+  }
+}
+h2 {
+  font-size: 160%;
+  margin-bottom: 50px;
+}
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  /* -webkit-text-stroke: 2px white; */
+  font-size: 100%;
+}
+
+.btn {
+  width: 100%;
+}
+
+@media (max-width: 468px) {
+  h2 {
+    font-size: 120%;
+  }
+}
