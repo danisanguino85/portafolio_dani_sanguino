@@ -27,7 +27,6 @@ ul {
 }
 i:hover {
   transform: scale(1.3);
-  /* Cambiado a transform para hover */
 }
 .nombre {
   display: flex;
